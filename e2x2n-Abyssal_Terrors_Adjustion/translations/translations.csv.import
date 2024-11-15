@@ -1,0 +1,16 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+
+[deps]
+
+files=[ "res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation", "res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation" ]
+
+source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.csv"
+dest_files=[ "res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation", "res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation" ]
+
+[params]
+
+compress=true
+delimiter=0

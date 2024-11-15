@@ -1,0 +1,35 @@
+[gd_resource type="Resource" load_steps=6 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/ATA_data.gd" type="Script" id=1]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation" type="Translation" id=2]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation" type="Translation" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/ATA_black_pearl_data.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_pink_pearl/ATA_pink_pearl_data.tres" type="Resource" id=5]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "Abyssal_Terrors_Adjustion"
+groups_in_all_zones = [  ]
+backgrounds = [  ]
+zones = [  ]
+characters = [  ]
+items = [ ExtResource( 4 ), ExtResource( 5 ) ]
+weapons = [  ]
+challenges = [  ]
+elites = [  ]
+bosses = [  ]
+stats = [  ]
+sets = [  ]
+icons = [  ]
+scene_effect_behaviors = [  ]
+enemy_effect_behaviors = [  ]
+player_effect_behaviors = [  ]
+music_tracks = [  ]
+title_screen_backgrounds = [  ]
+translations = [ ExtResource( 2 ), ExtResource( 3 ) ]
+translation_keys_needing_operator = {
+}
+translation_keys_needing_percent = {
+}
+tracked_items = {
+}

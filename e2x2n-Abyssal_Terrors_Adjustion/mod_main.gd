@@ -1,28 +1,54 @@
 extends Node
 
-const MOD_DIR := "e2x2n-Abyssal_Terrors_Adjustion/"
-const LOG_NAME := "e2x2n-Abyssal_Terrors_Adjustion:Main"
+const MOD_DIR = "e2x2n-Abyssal_Terrors_Adjustion/"
+const LOG_NAME = "e2x2n-Abyssal_Terrors_Adjustion"
 
 var dir = ""
 var content_dir = ""
-var content_data_dir = ""
-var ext_dir = ""
 var trans_dir = ""
 
+var custom_items = []
+var custom_characters = []
+var custom_weapons = []
+var custom_challenges = []
 
-func _init(modLoader = ModLoader):
-	ModLoaderUtils.log_info("Init",  LOG_NAME)
-	dir = modLoader.UNPACKED_DIR + MOD_DIR
+
+func _init():
+	ModLoaderLog.info("Initializing Abyssal Terrors Adjustion", LOG_NAME)
+	
+	dir = ModLoaderMod.get_unpacked_dir() + MOD_DIR
 	trans_dir = dir + "translations/"
 	content_dir = dir + "content/"
-	content_data_dir = dir + "content_data/"
-	ext_dir = dir + "extensions/"
-	modLoader.add_translation_from_resource("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation")
-	modLoader.add_translation_from_resource("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation")
+	
+	ModLoaderMod.add_translation("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation")
+	ModLoaderMod.add_translation("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation")
+	print(tr("ATA_ITEM_BLACK_PEARL"))
+
 
 func _ready():
-	ModLoaderUtils.log_info("Done",  LOG_NAME)
+	ModLoaderLog.info("Loading Abyssal Terrors Adjustion Content", LOG_NAME)
 
-	var ContentLoader = get_node("/root/ModLoader/Darkly77-ContentLoader/ContentLoader")
+	var ata_data = load(dir + "ATA_data.tres")
 
-	ContentLoader.load_data("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content_data/new_resource.tres", LOG_NAME)
+	if ata_data:
+		_add_mod_data(ata_data)
+		_install_data()
+		ModLoaderLog.info("Content loaded for Abyssal Terrors Adjustion", LOG_NAME)
+	else:
+		ModLoaderLog.error("Failed to load ATA_data.tres", LOG_NAME)
+
+
+func _add_mod_data(mod_data):
+	custom_items.append_array(mod_data.items)
+	custom_characters.append_array(mod_data.characters)
+	custom_weapons.append_array(mod_data.weapons)
+	custom_challenges.append_array(mod_data.challenges)
+
+
+func _install_data():
+	ItemService.items.append_array(custom_items)
+	ItemService.characters.append_array(custom_characters)
+	ItemService.weapons.append_array(custom_weapons)
+	ChallengeService.challenges.append_array(custom_challenges)
+
+	ModLoaderLog.info("Installed content for Abyssal Terrors Adjustion", LOG_NAME)

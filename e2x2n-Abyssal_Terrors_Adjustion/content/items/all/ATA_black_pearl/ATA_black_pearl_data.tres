@@ -1,0 +1,28 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/ATA_black_pearl_icon.png" type="Texture" id=1]
+[ext_resource path="res://items/global/item_data.gd" type="Script" id=2]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_1.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_5.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_0.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_3.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/appearances/ATA_black_pearl_app.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_2.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_black_pearl/effects/ATA_black_pearl_effect_4.tres" type="Resource" id=9]
+
+[resource]
+script = ExtResource( 2 )
+my_id = "ATA_item_black_pearl"
+unlocked_by_default = true
+icon = ExtResource( 1 )
+name = "ATA_ITEM_BLACK_PEARL"
+tier = 2
+value = 88
+effects = [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 4 ) ]
+tracking_text = ""
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+max_nb = 10
+item_appearances = [ ExtResource( 7 ) ]
+tags = [ "stat_luck" ]

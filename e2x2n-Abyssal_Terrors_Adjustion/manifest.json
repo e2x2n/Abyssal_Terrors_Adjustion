@@ -1,0 +1,21 @@
+{
+    "name": "Abyssal_Terrors_Adjustion",
+    "namespace": "e2x2n",
+    "version_number": "1.0.0",
+    "description": "",
+    "website_url": "",
+    "dependencies": [],
+    "extra": {
+        "godot": {
+            "authors": ["e2x2n"],
+            "tags": [],
+            "description_rich": "",
+            "optional_dependencies": [],
+            "load_before": [],
+            "incompatibilities": [],
+            "compatible_mod_loader_version": ["3.0.0"],
+            "compatible_game_version": ["1.0.0.0"],
+            "config_schema": {}
+        }
+    }
+}

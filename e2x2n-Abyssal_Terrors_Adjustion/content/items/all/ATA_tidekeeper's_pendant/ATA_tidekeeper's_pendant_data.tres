@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://items/global/item_data.gd" type="Script" id=9]
+
+[resource]
+script = ExtResource( 9 )
+my_id = "ATA_tidekeeper's_pendant"
+unlocked_by_default = true
+name = "ATA_TIDEKEEPER'S_PENDANT"
+tier = 3
+value = 333
+effects = [  ]
+tracking_text = ""
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+max_nb = 5
+item_appearances = [  ]
+tags = [ "stat_luck" ]
