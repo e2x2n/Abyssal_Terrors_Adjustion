@@ -1,3 +1,9 @@
 ﻿keys,en,zh
 ATA_ITEM_PINK_PEARL,Pink Pearl,粉珍珠
 ATA_ITEM_BLACK_PEARL,Black Pearl,黑珍珠
+ATA_ITEM_ORANGE_3,Orange,橘子
+ATA_ITEM_ORANGE_2,Orange,橘子
+ATA_ITEM_ORANGE_1,Orange,橘子
+ATA_ITEM_EATEN_ORANGE,Eaten Orange,吃剩的橘子
+EFFECT_EATEN_ORANGE,The orange has already been eaten.,橘子已经被吃完了
+EFFECT_TEMP_ITEM,For the future {0} waves,在接下来的{0}个波次中

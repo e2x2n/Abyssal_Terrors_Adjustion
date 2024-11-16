@@ -5,6 +5,7 @@ const LOG_NAME = "e2x2n-Abyssal_Terrors_Adjustion"
 
 var dir = ""
 var content_dir = ""
+var ext_dir = ""
 var trans_dir = ""
 
 var custom_items = []
@@ -17,12 +18,19 @@ func _init():
 	ModLoaderLog.info("Initializing Abyssal Terrors Adjustion", LOG_NAME)
 	
 	dir = ModLoaderMod.get_unpacked_dir() + MOD_DIR
+	ext_dir = dir + "extensions/"
 	trans_dir = dir + "translations/"
 	content_dir = dir + "content/"
+
+	var extensions = [
+	"singletons/ATA_run_data.gd",
+	"singletons/ATA_player_run_data.gd"
+	]
+	for path in extensions:
+		ModLoaderMod.install_script_extension(ext_dir + path)
 	
 	ModLoaderMod.add_translation("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation")
 	ModLoaderMod.add_translation("res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.zh.translation")
-	print(tr("ATA_ITEM_BLACK_PEARL"))
 
 
 func _ready():

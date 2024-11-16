@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_orange/remain_2/ATA_orange_data_2.tres" type="Resource" id=1]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_orange/appearances/ATA_orange_app.tres" type="Resource" id=4]
+[ext_resource path="res://items/global/item_data.gd" type="Script" id=5]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_orange/ATA_orange_icon.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_orange/remain_3/effects/ATA_orange_effect_1.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_orange/remain_3/effects/ATA_orange_effect_0.tres" type="Resource" id=8]
+
+[resource]
+script = ExtResource( 5 )
+my_id = "ATA_item_orange_3"
+unlocked_by_default = true
+icon = ExtResource( 6 )
+name = "ATA_ITEM_ORANGE_3"
+tier = 0
+value = 1
+effects = [ ExtResource( 8 ), ExtResource( 7 ) ]
+tracking_text = ""
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+max_nb = -1
+item_appearances = [ ExtResource( 4 ) ]
+tags = [  ]
+replaced_by = ExtResource( 1 )

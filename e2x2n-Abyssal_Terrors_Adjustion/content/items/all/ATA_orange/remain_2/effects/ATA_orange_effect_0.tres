@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://items/global/effect.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+key = "ATA_item_orange_2"
+text_key = "EFFECT_TEMP_ITEM"
+value = 2
+custom_key = "temp_items"
+storage_method = 4
+effect_sign = 2
+custom_args = [  ]
