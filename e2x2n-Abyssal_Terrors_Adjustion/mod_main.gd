@@ -24,7 +24,8 @@ func _init():
 
 	var extensions = [
 	"singletons/ATA_run_data.gd",
-	"singletons/ATA_player_run_data.gd"
+	"singletons/ATA_player_run_data.gd",
+	"ATA_main.gd"
 	]
 	for path in extensions:
 		ModLoaderMod.install_script_extension(ext_dir + path)

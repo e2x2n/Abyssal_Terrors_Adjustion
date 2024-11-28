@@ -13,7 +13,8 @@ static func init_effects() -> Dictionary:
 	var vanilla_effects = .init_effects()
 
 	var new_effects: = {
-		"temp_items": []
+		"temp_items": [],
+		"gain_stat_when_pick_up_consumable": []
 	}
 
 	new_effects.merge(vanilla_effects)

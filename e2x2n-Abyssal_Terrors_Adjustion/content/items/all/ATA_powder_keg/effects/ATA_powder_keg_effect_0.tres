@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource( 1 )
-key = "stat_max_hp"
-text_key = ""
-value = 5
-custom_key = ""
-storage_method = 0
+key = "stat_hp_regeneration"
+text_key = "EFFECT_GAIN_EVERY_CONSUMABLE"
+value = 3
+custom_key = "gain_stat_when_pick_up_consumable"
+storage_method = 4
 effect_sign = 3
 custom_args = [  ]
