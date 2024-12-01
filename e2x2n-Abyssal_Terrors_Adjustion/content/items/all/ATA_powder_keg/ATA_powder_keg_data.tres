@@ -1,20 +1,25 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=7 format=2]
 
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/ATA_powder_keg_icon.png" type="Texture" id=1]
 [ext_resource path="res://items/global/item_data.gd" type="Script" id=2]
-[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_canned_food/effects/ATA_canned_food_effect_0.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/appearances/ATA_powder_keg_app.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/effects/ATA_powder_keg_effect_0.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/effects/ATA_powder_keg_effect_1.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/effects/ATA_powder_keg_effect_2.tres" type="Resource" id=6]
 
 [resource]
 script = ExtResource( 2 )
 my_id = "ATA_item_powder_keg"
 unlocked_by_default = true
+icon = ExtResource( 1 )
 name = "ATA_ITEM_POWDER_KEG"
-tier = 0
-value = 20
-effects = [ ExtResource( 4 ) ]
+tier = 2
+value = 70
+effects = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ]
 tracking_text = ""
 is_lockable = true
 is_cursed = false
 curse_factor = 0.0
-max_nb = 1
-item_appearances = [  ]
-tags = [  ]
+max_nb = -1
+item_appearances = [ ExtResource( 3 ) ]
+tags = [ "explosion_damage", "" ]

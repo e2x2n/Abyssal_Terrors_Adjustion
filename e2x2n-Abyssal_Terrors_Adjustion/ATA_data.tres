@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=12 format=2]
+[gd_resource type="Resource" load_steps=19 format=2]
 
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/ATA_data.gd" type="Script" id=1]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation" type="Translation" id=2]
@@ -11,6 +11,13 @@
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_eaten_orange/ATA_eaten_orange_data.tres" type="Resource" id=9]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_canned_food/ATA_canned_food_data.tres" type="Resource" id=10]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/effects/items/gain_stat_every_consumable.gd" type="Script" id=11]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_powder_keg/ATA_powder_keg_data.tres" type="Resource" id=12]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_5/ATA_rum_data_5.tres" type="Resource" id=13]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_4/ATA_rum_data_4.tres" type="Resource" id=14]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_3/ATA_rum_data_3.tres" type="Resource" id=15]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_2/ATA_rum_data_2.tres" type="Resource" id=16]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_1/ATA_rum_data_1.tres" type="Resource" id=17]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_rum/remain_0/ATA_rum_data_0.tres" type="Resource" id=18]
 
 [resource]
 script = ExtResource( 1 )
@@ -19,7 +26,7 @@ groups_in_all_zones = [  ]
 backgrounds = [  ]
 zones = [  ]
 characters = [  ]
-items = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ]
+items = [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ]
 weapons = [  ]
 effects = [ ExtResource( 11 ) ]
 challenges = [  ]
