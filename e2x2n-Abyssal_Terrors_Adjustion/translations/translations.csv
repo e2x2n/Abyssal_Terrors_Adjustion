@@ -1,20 +1,14 @@
 ﻿keys,en,zh
 ATA_ITEM_PINK_PEARL,Pink Pearl,粉珍珠
 ATA_ITEM_BLACK_PEARL,Black Pearl,黑珍珠
-ATA_ITEM_ORANGE_3,Orange,橘子
-ATA_ITEM_ORANGE_2,Orange,橘子
-ATA_ITEM_ORANGE_1,Orange,橘子
+ATA_ITEM_ORANGE,Orange,橘子
 ATA_ITEM_EATEN_ORANGE,Eaten Orange,吃剩的橘子
 EFFECT_EATEN_ORANGE,The orange has already been eaten.,橘子已经被吃完了
 EFFECT_TEMP_ITEM,For the future {0} waves,在接下来的{0}波敌袭中
 ATA_ITEM_CANNED_FOOD,Canned Food,罐装食品
 EFFECT_GAIN_EVERY_CONSUMABLE,Gain 1 {0} when picking up every {1} consumables,每当你拾起{0}个消耗品时获得1{1}
 ATA_ITEM_POWDER_KEG,Powder Keg,火药桶
-ATA_ITEM_RUM_5,Rum,朗姆酒
-ATA_ITEM_RUM_4,Rum,朗姆酒
-ATA_ITEM_RUM_3,Rum,朗姆酒
-ATA_ITEM_RUM_2,Rum,朗姆酒
-ATA_ITEM_RUM_1,Rum,朗姆酒
-ATA_ITEM_RUM_0,Rum,朗姆酒
+ATA_ITEM_RUM,Rum,朗姆酒
 ATA_ITEM_TOBACCO_PIPE,Tobacco Pipe,烟斗
 ATA_ITEM_SAILING_LOG,Sailing Log,航海日志
+ATA_WEAPON_BOW_OF_ABYSS,Tentacle Bow,触手弓

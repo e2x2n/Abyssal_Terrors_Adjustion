@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ATA_bow_of_abyss_arrow_shoot_type1_02.wav-bfd33086236a3f0b5d7324cb411f54ca.sample"
+
+[deps]
+
+source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_bow_of_abyss/ATA_bow_of_abyss_arrow_shoot_type1_02.wav"
+dest_files=[ "res://.import/ATA_bow_of_abyss_arrow_shoot_type1_02.wav-bfd33086236a3f0b5d7324cb411f54ca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
