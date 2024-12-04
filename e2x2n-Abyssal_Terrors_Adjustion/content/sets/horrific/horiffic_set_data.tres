@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://items/sets/set_data.gd" type="Script" id=1]
+[ext_resource path="res://dlcs/dlc_1/sets/naval/2/set_2_effect_1.tres" type="Resource" id=2]
+[ext_resource path="res://dlcs/dlc_1/sets/naval/6/set_6_effect_1.tres" type="Resource" id=3]
+[ext_resource path="res://dlcs/dlc_1/sets/naval/5/set_5_effect_1.tres" type="Resource" id=4]
+[ext_resource path="res://dlcs/dlc_1/sets/naval/3/set_3_effect_1.tres" type="Resource" id=5]
+[ext_resource path="res://dlcs/dlc_1/sets/naval/4/set_4_effect_1.tres" type="Resource" id=6]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/3/set_3_effect_2.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/6/set_6_effect_2.tres" type="Resource" id=8]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/5/set_5_effect_2.tres" type="Resource" id=9]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/2/set_2_effect_2.tres" type="Resource" id=10]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/4/set_4_effect_2.tres" type="Resource" id=11]
+
+[resource]
+script = ExtResource( 1 )
+my_id = "ATA_set_horrific"
+name = "ATA_WEAPON_CLASS_HORRIFIC"
+set_bonuses = [ [ ExtResource( 2 ), ExtResource( 10 ) ], [ ExtResource( 5 ), ExtResource( 7 ) ], [ ExtResource( 6 ), ExtResource( 11 ) ], [ ExtResource( 4 ), ExtResource( 9 ) ], [ ExtResource( 3 ), ExtResource( 8 ) ] ]

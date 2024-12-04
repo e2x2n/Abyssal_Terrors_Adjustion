@@ -11,6 +11,7 @@ var trans_dir = ""
 var custom_items = []
 var custom_characters = []
 var custom_weapons = []
+var custom_sets = []
 var custom_challenges = []
 
 
@@ -51,6 +52,7 @@ func _add_mod_data(mod_data):
 	custom_items.append_array(mod_data.items)
 	custom_characters.append_array(mod_data.characters)
 	custom_weapons.append_array(mod_data.weapons)
+	custom_sets.append_array(mod_data.sets)
 	custom_challenges.append_array(mod_data.challenges)
 
 
@@ -58,6 +60,7 @@ func _install_data():
 	ItemService.items.append_array(custom_items)
 	ItemService.characters.append_array(custom_characters)
 	ItemService.weapons.append_array(custom_weapons)
+	ItemService.sets.append_array(custom_sets)
 	ChallengeService.challenges.append_array(custom_challenges)
 
 	ModLoaderLog.info("Installed content for Abyssal Terrors Adjustion", LOG_NAME)

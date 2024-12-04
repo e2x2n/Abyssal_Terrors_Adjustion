@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=25 format=2]
+[gd_resource type="Resource" load_steps=26 format=2]
 
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/ATA_data.gd" type="Script" id=1]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/translations/translations.en.translation" type="Translation" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_bow_of_abyss/2/ATA_bow_of_abyss_data_2.tres" type="Resource" id=22]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_bow_of_abyss/3/ATA_bow_of_abyss_data_3.tres" type="Resource" id=23]
 [ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_bow_of_abyss/4/ATA_bow_of_abyss_data_4.tres" type="Resource" id=24]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/horiffic_set_data.tres" type="Resource" id=25]
 
 [resource]
 script = ExtResource( 1 )
@@ -39,7 +40,7 @@ challenges = [  ]
 elites = [  ]
 bosses = [  ]
 stats = [  ]
-sets = [  ]
+sets = [ ExtResource( 25 ) ]
 icons = [  ]
 scene_effect_behaviors = [  ]
 enemy_effect_behaviors = [  ]
