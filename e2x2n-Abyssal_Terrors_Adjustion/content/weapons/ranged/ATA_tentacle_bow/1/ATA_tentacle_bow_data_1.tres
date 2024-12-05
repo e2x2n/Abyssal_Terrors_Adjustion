@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/1/ATA_tentacle_bow_stats_1.tres" type="Resource" id=1]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/1/ATA_tentacle_bow_effect_1.tres" type="Resource" id=2]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/2/ATA_tentacle_bow_data_2.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/ATA_tentacle_bow.tscn" type="PackedScene" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/1/ATA_tentacle_bow_effect_1_1.tres" type="Resource" id=5]
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=6]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/horiffic_set_data.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/ATA_tentacle_bow_icon.png" type="Texture" id=8]
+[ext_resource path="res://items/sets/primitive/primitive_set_data.tres" type="Resource" id=9]
+
+[resource]
+script = ExtResource( 6 )
+my_id = "ATA_weapon_tentacle_bow_1"
+unlocked_by_default = true
+icon = ExtResource( 8 )
+name = "ATA_WEAPON_TENTACLE_BOW"
+tier = 0
+value = 17
+effects = [ ExtResource( 2 ), ExtResource( 5 ) ]
+tracking_text = "stats_gained"
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+weapon_id = "ATA_weapon_tentacle_bow"
+type = 1
+sets = [ ExtResource( 7 ), ExtResource( 9 ) ]
+scene = ExtResource( 4 )
+stats = ExtResource( 1 )
+upgrades_into = ExtResource( 3 )
+add_to_chars_as_starting = [  ]

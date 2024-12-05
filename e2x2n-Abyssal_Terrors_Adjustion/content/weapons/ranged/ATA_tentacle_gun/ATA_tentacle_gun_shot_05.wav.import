@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ATA_tentacle_gun_shot_05.wav-68b46aded512a1b0060abf5dda03c2b3.sample"
+
+[deps]
+
+source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/ATA_tentacle_gun_shot_05.wav"
+dest_files=[ "res://.import/ATA_tentacle_gun_shot_05.wav-68b46aded512a1b0060abf5dda03c2b3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

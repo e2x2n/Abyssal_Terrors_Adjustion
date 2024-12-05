@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://projectiles/player_projectile.tscn" type="PackedScene" id=1]
-[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_bow_of_abyss/ATA_bow_of_abyss_projectile.png" type="Texture" id=2]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/ATA_tentacle_bow_projectile.png" type="Texture" id=2]
 
 [sub_resource type="Animation" id=1]
 length = 0.001

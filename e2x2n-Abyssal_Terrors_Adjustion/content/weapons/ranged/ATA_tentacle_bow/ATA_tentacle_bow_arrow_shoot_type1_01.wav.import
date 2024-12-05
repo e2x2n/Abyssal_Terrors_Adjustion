@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ATA_tentacle_bow_arrow_shoot_type1_01.wav-a5826d906efbf9b4f68876f59255c3d9.sample"
+
+[deps]
+
+source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_bow/ATA_tentacle_bow_arrow_shoot_type1_01.wav"
+dest_files=[ "res://.import/ATA_tentacle_bow_arrow_shoot_type1_01.wav-a5826d906efbf9b4f68876f59255c3d9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

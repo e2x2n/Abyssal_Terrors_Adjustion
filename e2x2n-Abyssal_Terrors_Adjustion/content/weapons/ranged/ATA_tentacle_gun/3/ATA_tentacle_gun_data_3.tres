@@ -1,0 +1,32 @@
+[gd_resource type="Resource" load_steps=10 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/3/ATA_tentacle_gun_stats_3.tres" type="Resource" id=1]
+[ext_resource path="res://items/global/weapon_data.gd" type="Script" id=2]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/3/ATA_tentacle_gun_effect_3_1.tres" type="Resource" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/4/ATA_tentacle_gun_data_4.tres" type="Resource" id=4]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/3/ATA_tentacle_gun_effect_3.tres" type="Resource" id=5]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/ATA_tentacle_gun_icon.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/sets/horrific/horiffic_set_data.tres" type="Resource" id=7]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/weapons/ranged/ATA_tentacle_gun/ATA_tentacle_gun.tscn" type="PackedScene" id=8]
+[ext_resource path="res://items/sets/gun/gun_set_data.tres" type="Resource" id=9]
+
+[resource]
+script = ExtResource( 2 )
+my_id = "ATA_weapon_tentacle_gun_3"
+unlocked_by_default = true
+icon = ExtResource( 6 )
+name = "ATA_WEAPON_TENTACLE_GUN"
+tier = 2
+value = 70
+effects = [ ExtResource( 5 ), ExtResource( 3 ) ]
+tracking_text = "stats_gained"
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+weapon_id = "ATA_weapon_tentacle_gun"
+type = 1
+sets = [ ExtResource( 7 ), ExtResource( 9 ) ]
+scene = ExtResource( 8 )
+stats = ExtResource( 1 )
+upgrades_into = ExtResource( 4 )
+add_to_chars_as_starting = [  ]
