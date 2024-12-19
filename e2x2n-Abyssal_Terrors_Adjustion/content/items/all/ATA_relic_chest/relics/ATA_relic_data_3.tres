@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=5 format=2]
+
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_relic_chest/effects/ATA_relic_effect_3.tres" type="Resource" id=1]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_relic_chest/ATA_relic_chest_icon.png" type="Texture" id=2]
+[ext_resource path="res://items/global/item_data.gd" type="Script" id=3]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_relic_chest/appearances/ATA_relic_chest_app.tres" type="Resource" id=4]
+
+[resource]
+script = ExtResource( 3 )
+my_id = "ATA_item_relic_3"
+unlocked_by_default = false
+icon = ExtResource( 2 )
+name = "ATA_ITEM_RELIC"
+tier = 2
+value = 1
+effects = [ ExtResource( 1 ) ]
+tracking_text = ""
+is_lockable = true
+is_cursed = false
+curse_factor = 0.0
+max_nb = -1
+item_appearances = [ ExtResource( 4 ) ]
+tags = [  ]

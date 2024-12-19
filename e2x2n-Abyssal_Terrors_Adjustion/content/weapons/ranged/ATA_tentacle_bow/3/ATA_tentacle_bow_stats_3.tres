@@ -11,7 +11,7 @@
 
 [resource]
 script = ExtResource( 1 )
-cooldown = 40
+cooldown = 34
 damage = 21
 accuracy = 1.0
 crit_chance = 0.3

@@ -30,8 +30,6 @@ func process_temporary_effects(player_index: int) -> void:
 				break
 
 
-
-
 func remove_item(item: ItemData, player_index: int, by_id: bool = false)->void :
 	for i in players_data[player_index].items.size():
 		var cond = ItemService.is_same_item(item, players_data[player_index].items[i])
@@ -51,6 +49,25 @@ func remove_item(item: ItemData, player_index: int, by_id: bool = false)->void :
 	if item.replaced_by:
 		if item.is_cursed:
 			var dlc = ProgressData.get_dlc_data("abyssal_terrors")
-			add_item(dlc.curse_item(item.replaced_by, player_index, true), player_index)
+			add_item(dlc.curse_item(item.replaced_by, player_index), player_index)
 		else:
 			add_item(item.replaced_by, player_index)
+
+
+func add_item(item: ItemData, player_index: int)->void :
+	if Utils == null:
+		return
+	
+	randomize()
+	var random_integer = randi() % 4 + 1
+	var random_relic_id = "ATA_item_relic_" + str(random_integer)
+	
+	var chest = item;
+	if (chest.my_id == "ATA_item_relic_chest") :
+		item = ItemService.get_element(ItemService.items, random_relic_id)
+		
+		if chest.is_cursed :
+			var dlc = ProgressData.get_dlc_data("abyssal_terrors")
+			item = dlc.curse_item(item, player_index)
+	
+	.add_item(item, player_index)

@@ -12,7 +12,9 @@ var custom_items = []
 var custom_characters = []
 var custom_weapons = []
 var custom_sets = []
-var custom_challenges = []
+var custom_stats = []
+var translation_keys_needing_operator = {}
+
 
 
 func _init():
@@ -26,7 +28,9 @@ func _init():
 	var extensions = [
 	"singletons/ATA_run_data.gd",
 	"singletons/ATA_player_run_data.gd",
-	"ATA_main.gd"
+	"singletons/ATA_text.gd",
+	"ATA_main.gd",
+	"ui/menus/shop/ATA_base_shop.gd"
 	]
 	for path in extensions:
 		ModLoaderMod.install_script_extension(ext_dir + path)
@@ -53,7 +57,8 @@ func _add_mod_data(mod_data):
 	custom_characters.append_array(mod_data.characters)
 	custom_weapons.append_array(mod_data.weapons)
 	custom_sets.append_array(mod_data.sets)
-	custom_challenges.append_array(mod_data.challenges)
+	custom_stats.append_array(mod_data.stats)
+	translation_keys_needing_operator.merge(mod_data.translation_keys_needing_operator)
 
 
 func _install_data():
@@ -61,6 +66,7 @@ func _install_data():
 	ItemService.characters.append_array(custom_characters)
 	ItemService.weapons.append_array(custom_weapons)
 	ItemService.sets.append_array(custom_sets)
-	ChallengeService.challenges.append_array(custom_challenges)
+	ItemService.stats.append_array(custom_stats)
+	Text.keys_needing_operator.merge(translation_keys_needing_operator)
 
 	ModLoaderLog.info("Installed content for Abyssal Terrors Adjustion", LOG_NAME)
