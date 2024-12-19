@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/disease_icon.png-270b082a204a65012a0a6421cc00e381.stex"
+path="res://.import/ATA_disease_icon.png-b9db0bc34cf76a4c05697bba6a6a3e33.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/upgrades/disease/disease_icon.png"
-dest_files=[ "res://.import/disease_icon.png-270b082a204a65012a0a6421cc00e381.stex" ]
+source_file="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/upgrades/disease/ATA_disease_icon.png"
+dest_files=[ "res://.import/ATA_disease_icon.png-b9db0bc34cf76a4c05697bba6a6a3e33.stex" ]
 
 [params]
 

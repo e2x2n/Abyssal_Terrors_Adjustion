@@ -17,3 +17,4 @@ ATA_WEAPON_TENTACLE_GUN,Tentacle Gun,触手枪
 ATA_WEAPON_TENTACLE_BOW,Tentacle Bow,触手弓
 STAT_DISEASE,Disease,疫病
 INFO_POS_STAT_DISEASE,"Disease will Disease will reduce your maximum HP, and once your disease level reaches 100, you lose the current game.",疫病会削减你的最大生命值，当你的疫病值达到100时，你输掉本局游戏。
+INFO_NEG_STAT_DISEASE,"Disease will Disease will reduce your maximum HP, and once your disease level reaches 100, you lose the current game.",疫病会削减你的最大生命值，当你的疫病值达到100时，你输掉本局游戏。

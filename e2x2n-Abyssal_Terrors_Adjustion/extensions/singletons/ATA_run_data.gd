@@ -1,6 +1,17 @@
 extends "res://singletons/run_data.gd"
 
 
+func on_wave_start()->void :
+	if Utils == null:
+		return
+
+	.on_wave_start()
+	
+	for player_index in RunData.get_player_count():
+		var disease_stat = Utils.get_stat("stat_disease", player_index)
+		if (disease_stat >= 100) :
+			.apply_end_run()
+
 func on_wave_end()->void :
 	if Utils == null:
 		return
@@ -9,6 +20,12 @@ func on_wave_end()->void :
 	
 	for player_index in RunData.get_player_count():
 		process_temporary_effects(player_index)
+		
+		var disease_stat = Utils.get_stat("stat_disease", player_index)
+		var disease_growth = RunData.get_player_effect("disease_growth", player_index)
+		
+		var val = ceil(disease_stat * (disease_growth / 100.0))
+		RunData.add_stat("stat_disease", val, player_index)
 
 
 func process_temporary_effects(player_index: int) -> void:
@@ -55,8 +72,7 @@ func remove_item(item: ItemData, player_index: int, by_id: bool = false)->void :
 
 
 func add_item(item: ItemData, player_index: int)->void :
-	if Utils == null:
-		return
+
 	
 	randomize()
 	var random_integer = randi() % 4 + 1
@@ -71,3 +87,13 @@ func add_item(item: ItemData, player_index: int)->void :
 			item = dlc.curse_item(item, player_index)
 	
 	.add_item(item, player_index)
+	
+func add_starting_items_and_weapons()->void :
+	if Utils == null:
+		return
+		
+	.add_starting_items_and_weapons()
+	
+	for player_index in players_data.size():
+		var item = ItemService.get_element(ItemService.items, "ATA_item_disease")
+		add_item(item, player_index)	

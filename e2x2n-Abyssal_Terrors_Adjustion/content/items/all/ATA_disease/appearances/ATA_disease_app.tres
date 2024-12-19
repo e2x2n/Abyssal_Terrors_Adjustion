@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
-[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_sailing_log/appearances/ATA_sailing_log_app.png" type="Texture" id=1]
+[ext_resource path="res://mods-unpacked/e2x2n-Abyssal_Terrors_Adjustion/content/items/all/ATA_disease/appearances/ATA_disease_app.png" type="Texture" id=1]
 [ext_resource path="res://items/global/item_appearance_data.gd" type="Script" id=2]
 
 [resource]
